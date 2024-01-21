@@ -1,5 +1,10 @@
 # NihGhevariaMyFavouriteGames
 
+
+## Theme Name
+My Theme name is favourite games and I will be creating project on games that I played.
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.10.
 
 ## Development server
