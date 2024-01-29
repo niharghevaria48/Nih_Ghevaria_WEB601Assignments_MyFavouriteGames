@@ -1,0 +1,15 @@
+
+<div *ngFor="let content of contentArray.slice(0, 5); let first = first" class="content-card-container" [ngClass]="{'first': first}" >
+    <!-- <app-content-card [content]="content"></app-content-card> -->
+<div class="content-card">
+        <header style="text-align: center; margin-bottom: 3%;">{{content.title}}</header>        
+        <img src="{{content.imgURL}}" alt="{{content.title}}" class="img" (click)="onCardClick(content)">
+        <p><u><i>Description:</i></u> {{content.description}}</p>
+        <p><u><i>Creator:</i></u> {{content.creator}}</p>
+        <p><u><i>Type:</i></u>  {{content.type}}</p>
+        <strong>Tags:</strong>
+        <ul *ngFor="let tag of content.tags">
+            <li>{{tag}}</li>
+        </ul>
+    </div>
+</div>
