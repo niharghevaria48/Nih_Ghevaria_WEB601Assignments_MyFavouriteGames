@@ -30,7 +30,7 @@ export class ContentListComponent {
       description: 'RDR2 is the epic tale of outlaw Arthur Morgan and the infamous Van der Linde gang, on the run across America at the dawn of the modern age.',
       creator: 'Rockstar',
       imgURL: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm9rvmc-saU0i3J0M3sCInAT4SmKdamRUsDA&usqp=CAU',
-      type: 'Story Mode',
+      type: 'Story-Mode',
       tags: ["Open World","Singleplayer","Online"],
     },
     {

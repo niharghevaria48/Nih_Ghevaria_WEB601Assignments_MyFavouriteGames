@@ -11,10 +11,10 @@
 
 <div id="notype">
  <h1>Content with No type</h1>
- <app-content-card *ngFor="let item of (contentArray | typeFilter: ' ')"  [content]="item"></app-content-card>
+ <app-content-card *ngFor="let item of (contentArray | typeFilter: ' ')"  [content]="item" style></app-content-card>
 </div>
 
-<div id="Survival">
+<div id="survival">
  <h1>Content with Survival</h1>
  <app-content-card *ngFor="let item of (contentArray | typeFilter: 'Survival')"  [content]="item"></app-content-card>
 </div>
@@ -28,6 +28,6 @@
 <div id="story">
 
  <h1>Content with Story Mode</h1>
- <app-content-card *ngFor="let item of (contentArray | typeFilter: 'Story Mode')"  [content]="item"></app-content-card>
+ <app-content-card *ngFor="let item of (contentArray | typeFilter: 'Story-Mode')"  [content]="item"></app-content-card>
 
 </div>
