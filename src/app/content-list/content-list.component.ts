@@ -4,14 +4,16 @@ import { Content } from '../helper-files/content-interface';
 import { CommonModule } from '@angular/common';
 import { TypeFilterPipe } from "../type-filter.pipe";
 import { FormsModule } from '@angular/forms';
+import { CreateContentComponent } from '../create-content/create-content.component';
 @Component({
     selector: 'app-content-list',
     standalone: true,
     templateUrl: './content-list.component.html',
     styleUrl: './content-list.component.scss',
-    imports: [CommonModule, ContentCardComponent, TypeFilterPipe,FormsModule]
+    imports: [CommonModule, ContentCardComponent, TypeFilterPipe,FormsModule,CreateContentComponent]
 })
 export class ContentListComponent {
+[x: string]: any;
   contentArray: Content[];
 
   constructor() {
@@ -96,5 +98,13 @@ export class ContentListComponent {
     }
   }
 
+
+
+  onContentAdded(newContent: any) {
+    
+    console.log(newContent.creator);
+    const contentToAdd = { ...newContent, tags: Array.isArray(newContent.tags) ? newContent.tags : [] };
+    this.contentArray.push(contentToAdd);
+  }
  
 }
